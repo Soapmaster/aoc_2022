@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <vector>
 
 // parser for input
 int parser(std::string input_file)
@@ -14,7 +13,7 @@ int parser(std::string input_file)
     {
         std::string line;
         std::getline(fs, line);
-        
+
         if(line.empty())
         {
             if(accumulated_calories  > most_calories)
